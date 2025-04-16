@@ -1,0 +1,107 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  background: white;
+}
+.create-post{
+  font-size:large;
+  
+}
+
+
+.headline {
+  background: purple;
+  color: white;
+  text-align: center;
+  font-size:large;
+  position: relative;
+}
+
+.create-post {
+  background:linen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.schedule {
+  background:plum
+  
+}
+
+.write-ai {
+  background: gold;
+  width: 50%;
+  height: 80%;
+  grid-area: auto ;
+}
+
+.accounts {
+  background: #ffffff;
+  text-align: center;
+}
+
+.growth {
+  justify-content: flex-ends;
+}
+ 
+  
+
+.consistent {
+  background: gold;
+  width: 50%;
+  height: 60%;
+} 
+
+.followers {
+  background: purple;
+  color: white;
+  width:100%;
+  height: 90%;
+  justify-items: flex-start;
+}
+
+@media (max-width: 765px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.create-post img{
+  width: 100%;
+}
+.schedule img{
+  width: 90%;
+  justify-content: end;
+  align-items:flex-end ;
+}
+.accounts img{
+  width: 90%;
+}
+.consistent img{
+  width: 100%;
+  align-items: flex-end;
+  align-content:flex-end ;
+}
+.write-ai img{
+  width: 95%;
+}
+.followers img{
+  width: 90%;
+}
